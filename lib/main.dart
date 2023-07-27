@@ -1,36 +1,19 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:project_structure/features/product/infrastructure/data_sources/remote/products_remote_data_source.dart';
-import 'package:project_structure/features/product/infrastructure/repos/product_repository.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:project_structure/core/providers/logger.dart';
+import 'package:project_structure/features/product/presentation/views/product_page/product_page.dart';
 
-import 'features/product/presentation/state/product_details_cubit/product_cubit.dart';
-import 'features/product/presentation/views/product_page/product_page.dart';
+import 'core/network/flavor_config.dart';
 
 void main() {
-  runApp(MultiRepositoryProvider(
-    providers: [
-      RepositoryProvider<Dio>(create: (context) => Dio()),
-      RepositoryProvider<ProductsRemoteDataSource>(
-        create: (context) => ProductsRemoteDataSource(
-          dio: context.read<Dio>(),
-        ),
-      ),
-      RepositoryProvider<ProductRepository>(
-        create: (context) => ProductRepository(
-          source: context.read<ProductsRemoteDataSource>(),
-        ),
-      ),
-    ],
-    child: MultiBlocProvider(providers: [
-      BlocProvider<ProductCubit>(
-        create: (context) {
-          return ProductCubit(
-              repository: RepositoryProvider.of<ProductRepository>(context));
-        },
-      ),
-    ], child: const MyApp()),
-  ));
+  FlavorConfig.appFlavor = Flavor.development;
+
+  runApp(
+    ProviderScope(
+      observers: [Logger()],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -38,12 +21,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Product App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const ProductPage(),
+    return const MaterialApp(
+      home: ProductPage(),
     );
   }
 }

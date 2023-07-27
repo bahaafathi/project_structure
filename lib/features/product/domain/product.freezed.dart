@@ -14,3091 +14,8 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-SunRoof _$SunRoofFromJson(Map<String, dynamic> json) {
-  return _SunRoof.fromJson(json);
-}
-
 /// @nodoc
-mixin _$SunRoof {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $SunRoofCopyWith<SunRoof> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $SunRoofCopyWith<$Res> {
-  factory $SunRoofCopyWith(SunRoof value, $Res Function(SunRoof) then) =
-      _$SunRoofCopyWithImpl<$Res, SunRoof>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr});
-}
-
-/// @nodoc
-class _$SunRoofCopyWithImpl<$Res, $Val extends SunRoof>
-    implements $SunRoofCopyWith<$Res> {
-  _$SunRoofCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_SunRoofCopyWith<$Res> implements $SunRoofCopyWith<$Res> {
-  factory _$$_SunRoofCopyWith(
-          _$_SunRoof value, $Res Function(_$_SunRoof) then) =
-      __$$_SunRoofCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr});
-}
-
-/// @nodoc
-class __$$_SunRoofCopyWithImpl<$Res>
-    extends _$SunRoofCopyWithImpl<$Res, _$_SunRoof>
-    implements _$$_SunRoofCopyWith<$Res> {
-  __$$_SunRoofCopyWithImpl(_$_SunRoof _value, $Res Function(_$_SunRoof) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-  }) {
-    return _then(_$_SunRoof(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_SunRoof implements _SunRoof {
-  const _$_SunRoof(
-      {required this.id,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr});
-
-  factory _$_SunRoof.fromJson(Map<String, dynamic> json) =>
-      _$$_SunRoofFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-
-  @override
-  String toString() {
-    return 'SunRoof(id: $id, nameEn: $nameEn, nameAr: $nameAr)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_SunRoof &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, nameEn, nameAr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_SunRoofCopyWith<_$_SunRoof> get copyWith =>
-      __$$_SunRoofCopyWithImpl<_$_SunRoof>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_SunRoofToJson(
-      this,
-    );
-  }
-}
-
-abstract class _SunRoof implements SunRoof {
-  const factory _SunRoof(
-      {required final int id,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr}) = _$_SunRoof;
-
-  factory _SunRoof.fromJson(Map<String, dynamic> json) = _$_SunRoof.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  @JsonKey(ignore: true)
-  _$$_SunRoofCopyWith<_$_SunRoof> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-CarType _$CarTypeFromJson(Map<String, dynamic> json) {
-  return _CarType.fromJson(json);
-}
-
-/// @nodoc
-mixin _$CarType {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $CarTypeCopyWith<CarType> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $CarTypeCopyWith<$Res> {
-  factory $CarTypeCopyWith(CarType value, $Res Function(CarType) then) =
-      _$CarTypeCopyWithImpl<$Res, CarType>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class _$CarTypeCopyWithImpl<$Res, $Val extends CarType>
-    implements $CarTypeCopyWith<$Res> {
-  _$CarTypeCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_CarTypeCopyWith<$Res> implements $CarTypeCopyWith<$Res> {
-  factory _$$_CarTypeCopyWith(
-          _$_CarType value, $Res Function(_$_CarType) then) =
-      __$$_CarTypeCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class __$$_CarTypeCopyWithImpl<$Res>
-    extends _$CarTypeCopyWithImpl<$Res, _$_CarType>
-    implements _$$_CarTypeCopyWith<$Res> {
-  __$$_CarTypeCopyWithImpl(_$_CarType _value, $Res Function(_$_CarType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_$_CarType(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_CarType implements _CarType {
-  const _$_CarType(
-      {required this.id,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr,
-      required this.image,
-      required this.status});
-
-  factory _$_CarType.fromJson(Map<String, dynamic> json) =>
-      _$$_CarTypeFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-  @override
-  final String image;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'CarType(id: $id, nameEn: $nameEn, nameAr: $nameAr, image: $image, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_CarType &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, nameEn, nameAr, image, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_CarTypeCopyWith<_$_CarType> get copyWith =>
-      __$$_CarTypeCopyWithImpl<_$_CarType>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_CarTypeToJson(
-      this,
-    );
-  }
-}
-
-abstract class _CarType implements CarType {
-  const factory _CarType(
-      {required final int id,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr,
-      required final String image,
-      required final int status}) = _$_CarType;
-
-  factory _CarType.fromJson(Map<String, dynamic> json) = _$_CarType.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  String get image;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_CarTypeCopyWith<_$_CarType> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-City _$CityFromJson(Map<String, dynamic> json) {
-  return _City.fromJson(json);
-}
-
-/// @nodoc
-mixin _$City {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'country_id')
-  int get countryId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $CityCopyWith<City> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $CityCopyWith<$Res> {
-  factory $CityCopyWith(City value, $Res Function(City) then) =
-      _$CityCopyWithImpl<$Res, City>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'country_id') int countryId,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      int status});
-}
-
-/// @nodoc
-class _$CityCopyWithImpl<$Res, $Val extends City>
-    implements $CityCopyWith<$Res> {
-  _$CityCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? countryId = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      countryId: null == countryId
-          ? _value.countryId
-          : countryId // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_CityCopyWith<$Res> implements $CityCopyWith<$Res> {
-  factory _$$_CityCopyWith(_$_City value, $Res Function(_$_City) then) =
-      __$$_CityCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'country_id') int countryId,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      int status});
-}
-
-/// @nodoc
-class __$$_CityCopyWithImpl<$Res> extends _$CityCopyWithImpl<$Res, _$_City>
-    implements _$$_CityCopyWith<$Res> {
-  __$$_CityCopyWithImpl(_$_City _value, $Res Function(_$_City) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? countryId = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? status = null,
-  }) {
-    return _then(_$_City(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      countryId: null == countryId
-          ? _value.countryId
-          : countryId // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_City implements _City {
-  const _$_City(
-      {required this.id,
-      @JsonKey(name: 'country_id') required this.countryId,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr,
-      required this.status});
-
-  factory _$_City.fromJson(Map<String, dynamic> json) => _$$_CityFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'country_id')
-  final int countryId;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'City(id: $id, countryId: $countryId, nameEn: $nameEn, nameAr: $nameAr, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_City &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.countryId, countryId) ||
-                other.countryId == countryId) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, countryId, nameEn, nameAr, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_CityCopyWith<_$_City> get copyWith =>
-      __$$_CityCopyWithImpl<_$_City>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_CityToJson(
-      this,
-    );
-  }
-}
-
-abstract class _City implements City {
-  const factory _City(
-      {required final int id,
-      @JsonKey(name: 'country_id') required final int countryId,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr,
-      required final int status}) = _$_City;
-
-  factory _City.fromJson(Map<String, dynamic> json) = _$_City.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'country_id')
-  int get countryId;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_CityCopyWith<_$_City> get copyWith => throw _privateConstructorUsedError;
-}
-
-Model _$ModelFromJson(Map<String, dynamic> json) {
-  return _Model.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Model {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'category_id')
-  int get categoryId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ModelCopyWith<Model> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ModelCopyWith<$Res> {
-  factory $ModelCopyWith(Model value, $Res Function(Model) then) =
-      _$ModelCopyWithImpl<$Res, Model>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'category_id') int categoryId,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class _$ModelCopyWithImpl<$Res, $Val extends Model>
-    implements $ModelCopyWith<$Res> {
-  _$ModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? categoryId = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      categoryId: null == categoryId
-          ? _value.categoryId
-          : categoryId // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_ModelCopyWith<$Res> implements $ModelCopyWith<$Res> {
-  factory _$$_ModelCopyWith(_$_Model value, $Res Function(_$_Model) then) =
-      __$$_ModelCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'category_id') int categoryId,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class __$$_ModelCopyWithImpl<$Res> extends _$ModelCopyWithImpl<$Res, _$_Model>
-    implements _$$_ModelCopyWith<$Res> {
-  __$$_ModelCopyWithImpl(_$_Model _value, $Res Function(_$_Model) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? categoryId = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_$_Model(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      categoryId: null == categoryId
-          ? _value.categoryId
-          : categoryId // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_Model implements _Model {
-  const _$_Model(
-      {required this.id,
-      @JsonKey(name: 'category_id') required this.categoryId,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr,
-      required this.image,
-      required this.status});
-
-  factory _$_Model.fromJson(Map<String, dynamic> json) =>
-      _$$_ModelFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'category_id')
-  final int categoryId;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-  @override
-  final String image;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'Model(id: $id, categoryId: $categoryId, nameEn: $nameEn, nameAr: $nameAr, image: $image, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Model &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.categoryId, categoryId) ||
-                other.categoryId == categoryId) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, categoryId, nameEn, nameAr, image, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_ModelCopyWith<_$_Model> get copyWith =>
-      __$$_ModelCopyWithImpl<_$_Model>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ModelToJson(
-      this,
-    );
-  }
-}
-
-abstract class _Model implements Model {
-  const factory _Model(
-      {required final int id,
-      @JsonKey(name: 'category_id') required final int categoryId,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr,
-      required final String image,
-      required final int status}) = _$_Model;
-
-  factory _Model.fromJson(Map<String, dynamic> json) = _$_Model.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'category_id')
-  int get categoryId;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  String get image;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_ModelCopyWith<_$_Model> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Maker _$MakerFromJson(Map<String, dynamic> json) {
-  return _Maker.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Maker {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $MakerCopyWith<Maker> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $MakerCopyWith<$Res> {
-  factory $MakerCopyWith(Maker value, $Res Function(Maker) then) =
-      _$MakerCopyWithImpl<$Res, Maker>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class _$MakerCopyWithImpl<$Res, $Val extends Maker>
-    implements $MakerCopyWith<$Res> {
-  _$MakerCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_MakerCopyWith<$Res> implements $MakerCopyWith<$Res> {
-  factory _$$_MakerCopyWith(_$_Maker value, $Res Function(_$_Maker) then) =
-      __$$_MakerCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr,
-      String image,
-      int status});
-}
-
-/// @nodoc
-class __$$_MakerCopyWithImpl<$Res> extends _$MakerCopyWithImpl<$Res, _$_Maker>
-    implements _$$_MakerCopyWith<$Res> {
-  __$$_MakerCopyWithImpl(_$_Maker _value, $Res Function(_$_Maker) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-    Object? image = null,
-    Object? status = null,
-  }) {
-    return _then(_$_Maker(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_Maker implements _Maker {
-  const _$_Maker(
-      {required this.id,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr,
-      required this.image,
-      required this.status});
-
-  factory _$_Maker.fromJson(Map<String, dynamic> json) =>
-      _$$_MakerFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-  @override
-  final String image;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'Maker(id: $id, nameEn: $nameEn, nameAr: $nameAr, image: $image, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Maker &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, nameEn, nameAr, image, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_MakerCopyWith<_$_Maker> get copyWith =>
-      __$$_MakerCopyWithImpl<_$_Maker>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_MakerToJson(
-      this,
-    );
-  }
-}
-
-abstract class _Maker implements Maker {
-  const factory _Maker(
-      {required final int id,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr,
-      required final String image,
-      required final int status}) = _$_Maker;
-
-  factory _Maker.fromJson(Map<String, dynamic> json) = _$_Maker.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  String get image;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_MakerCopyWith<_$_Maker> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-FuelType _$FuelTypeFromJson(Map<String, dynamic> json) {
-  return _FuelType.fromJson(json);
-}
-
-/// @nodoc
-mixin _$FuelType {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_en')
-  String get nameEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'name_ar')
-  String get nameAr => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $FuelTypeCopyWith<FuelType> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FuelTypeCopyWith<$Res> {
-  factory $FuelTypeCopyWith(FuelType value, $Res Function(FuelType) then) =
-      _$FuelTypeCopyWithImpl<$Res, FuelType>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr});
-}
-
-/// @nodoc
-class _$FuelTypeCopyWithImpl<$Res, $Val extends FuelType>
-    implements $FuelTypeCopyWith<$Res> {
-  _$FuelTypeCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_FuelTypeCopyWith<$Res> implements $FuelTypeCopyWith<$Res> {
-  factory _$$_FuelTypeCopyWith(
-          _$_FuelType value, $Res Function(_$_FuelType) then) =
-      __$$_FuelTypeCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'name_en') String nameEn,
-      @JsonKey(name: 'name_ar') String nameAr});
-}
-
-/// @nodoc
-class __$$_FuelTypeCopyWithImpl<$Res>
-    extends _$FuelTypeCopyWithImpl<$Res, _$_FuelType>
-    implements _$$_FuelTypeCopyWith<$Res> {
-  __$$_FuelTypeCopyWithImpl(
-      _$_FuelType _value, $Res Function(_$_FuelType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? nameEn = null,
-    Object? nameAr = null,
-  }) {
-    return _then(_$_FuelType(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      nameEn: null == nameEn
-          ? _value.nameEn
-          : nameEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      nameAr: null == nameAr
-          ? _value.nameAr
-          : nameAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_FuelType implements _FuelType {
-  const _$_FuelType(
-      {required this.id,
-      @JsonKey(name: 'name_en') required this.nameEn,
-      @JsonKey(name: 'name_ar') required this.nameAr});
-
-  factory _$_FuelType.fromJson(Map<String, dynamic> json) =>
-      _$$_FuelTypeFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'name_en')
-  final String nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  final String nameAr;
-
-  @override
-  String toString() {
-    return 'FuelType(id: $id, nameEn: $nameEn, nameAr: $nameAr)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_FuelType &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.nameEn, nameEn) || other.nameEn == nameEn) &&
-            (identical(other.nameAr, nameAr) || other.nameAr == nameAr));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, nameEn, nameAr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_FuelTypeCopyWith<_$_FuelType> get copyWith =>
-      __$$_FuelTypeCopyWithImpl<_$_FuelType>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_FuelTypeToJson(
-      this,
-    );
-  }
-}
-
-abstract class _FuelType implements FuelType {
-  const factory _FuelType(
-      {required final int id,
-      @JsonKey(name: 'name_en') required final String nameEn,
-      @JsonKey(name: 'name_ar') required final String nameAr}) = _$_FuelType;
-
-  factory _FuelType.fromJson(Map<String, dynamic> json) = _$_FuelType.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'name_en')
-  String get nameEn;
-  @override
-  @JsonKey(name: 'name_ar')
-  String get nameAr;
-  @override
-  @JsonKey(ignore: true)
-  _$$_FuelTypeCopyWith<_$_FuelType> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-InteriorColor _$InteriorColorFromJson(Map<String, dynamic> json) {
-  return _InteriorColor.fromJson(json);
-}
-
-/// @nodoc
-mixin _$InteriorColor {
-  int get id => throw _privateConstructorUsedError;
-  String get color => throw _privateConstructorUsedError;
-  @JsonKey(name: 'color_en')
-  String get colorEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'color_ar')
-  String get colorAr => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $InteriorColorCopyWith<InteriorColor> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $InteriorColorCopyWith<$Res> {
-  factory $InteriorColorCopyWith(
-          InteriorColor value, $Res Function(InteriorColor) then) =
-      _$InteriorColorCopyWithImpl<$Res, InteriorColor>;
-  @useResult
-  $Res call(
-      {int id,
-      String color,
-      @JsonKey(name: 'color_en') String colorEn,
-      @JsonKey(name: 'color_ar') String colorAr,
-      int status});
-}
-
-/// @nodoc
-class _$InteriorColorCopyWithImpl<$Res, $Val extends InteriorColor>
-    implements $InteriorColorCopyWith<$Res> {
-  _$InteriorColorCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? color = null,
-    Object? colorEn = null,
-    Object? colorAr = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorEn: null == colorEn
-          ? _value.colorEn
-          : colorEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorAr: null == colorAr
-          ? _value.colorAr
-          : colorAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_InteriorColorCopyWith<$Res>
-    implements $InteriorColorCopyWith<$Res> {
-  factory _$$_InteriorColorCopyWith(
-          _$_InteriorColor value, $Res Function(_$_InteriorColor) then) =
-      __$$_InteriorColorCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String color,
-      @JsonKey(name: 'color_en') String colorEn,
-      @JsonKey(name: 'color_ar') String colorAr,
-      int status});
-}
-
-/// @nodoc
-class __$$_InteriorColorCopyWithImpl<$Res>
-    extends _$InteriorColorCopyWithImpl<$Res, _$_InteriorColor>
-    implements _$$_InteriorColorCopyWith<$Res> {
-  __$$_InteriorColorCopyWithImpl(
-      _$_InteriorColor _value, $Res Function(_$_InteriorColor) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? color = null,
-    Object? colorEn = null,
-    Object? colorAr = null,
-    Object? status = null,
-  }) {
-    return _then(_$_InteriorColor(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorEn: null == colorEn
-          ? _value.colorEn
-          : colorEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorAr: null == colorAr
-          ? _value.colorAr
-          : colorAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_InteriorColor implements _InteriorColor {
-  const _$_InteriorColor(
-      {required this.id,
-      required this.color,
-      @JsonKey(name: 'color_en') required this.colorEn,
-      @JsonKey(name: 'color_ar') required this.colorAr,
-      required this.status});
-
-  factory _$_InteriorColor.fromJson(Map<String, dynamic> json) =>
-      _$$_InteriorColorFromJson(json);
-
-  @override
-  final int id;
-  @override
-  final String color;
-  @override
-  @JsonKey(name: 'color_en')
-  final String colorEn;
-  @override
-  @JsonKey(name: 'color_ar')
-  final String colorAr;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'InteriorColor(id: $id, color: $color, colorEn: $colorEn, colorAr: $colorAr, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_InteriorColor &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.color, color) || other.color == color) &&
-            (identical(other.colorEn, colorEn) || other.colorEn == colorEn) &&
-            (identical(other.colorAr, colorAr) || other.colorAr == colorAr) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, color, colorEn, colorAr, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_InteriorColorCopyWith<_$_InteriorColor> get copyWith =>
-      __$$_InteriorColorCopyWithImpl<_$_InteriorColor>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_InteriorColorToJson(
-      this,
-    );
-  }
-}
-
-abstract class _InteriorColor implements InteriorColor {
-  const factory _InteriorColor(
-      {required final int id,
-      required final String color,
-      @JsonKey(name: 'color_en') required final String colorEn,
-      @JsonKey(name: 'color_ar') required final String colorAr,
-      required final int status}) = _$_InteriorColor;
-
-  factory _InteriorColor.fromJson(Map<String, dynamic> json) =
-      _$_InteriorColor.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get color;
-  @override
-  @JsonKey(name: 'color_en')
-  String get colorEn;
-  @override
-  @JsonKey(name: 'color_ar')
-  String get colorAr;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_InteriorColorCopyWith<_$_InteriorColor> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-ExteriorColor _$ExteriorColorFromJson(Map<String, dynamic> json) {
-  return _ExteriorColor.fromJson(json);
-}
-
-/// @nodoc
-mixin _$ExteriorColor {
-  int get id => throw _privateConstructorUsedError;
-  String get color => throw _privateConstructorUsedError;
-  @JsonKey(name: 'color_en')
-  String get colorEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'color_ar')
-  String get colorAr => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ExteriorColorCopyWith<ExteriorColor> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ExteriorColorCopyWith<$Res> {
-  factory $ExteriorColorCopyWith(
-          ExteriorColor value, $Res Function(ExteriorColor) then) =
-      _$ExteriorColorCopyWithImpl<$Res, ExteriorColor>;
-  @useResult
-  $Res call(
-      {int id,
-      String color,
-      @JsonKey(name: 'color_en') String colorEn,
-      @JsonKey(name: 'color_ar') String colorAr,
-      int status});
-}
-
-/// @nodoc
-class _$ExteriorColorCopyWithImpl<$Res, $Val extends ExteriorColor>
-    implements $ExteriorColorCopyWith<$Res> {
-  _$ExteriorColorCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? color = null,
-    Object? colorEn = null,
-    Object? colorAr = null,
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorEn: null == colorEn
-          ? _value.colorEn
-          : colorEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorAr: null == colorAr
-          ? _value.colorAr
-          : colorAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_ExteriorColorCopyWith<$Res>
-    implements $ExteriorColorCopyWith<$Res> {
-  factory _$$_ExteriorColorCopyWith(
-          _$_ExteriorColor value, $Res Function(_$_ExteriorColor) then) =
-      __$$_ExteriorColorCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String color,
-      @JsonKey(name: 'color_en') String colorEn,
-      @JsonKey(name: 'color_ar') String colorAr,
-      int status});
-}
-
-/// @nodoc
-class __$$_ExteriorColorCopyWithImpl<$Res>
-    extends _$ExteriorColorCopyWithImpl<$Res, _$_ExteriorColor>
-    implements _$$_ExteriorColorCopyWith<$Res> {
-  __$$_ExteriorColorCopyWithImpl(
-      _$_ExteriorColor _value, $Res Function(_$_ExteriorColor) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? color = null,
-    Object? colorEn = null,
-    Object? colorAr = null,
-    Object? status = null,
-  }) {
-    return _then(_$_ExteriorColor(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorEn: null == colorEn
-          ? _value.colorEn
-          : colorEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      colorAr: null == colorAr
-          ? _value.colorAr
-          : colorAr // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_ExteriorColor implements _ExteriorColor {
-  const _$_ExteriorColor(
-      {required this.id,
-      required this.color,
-      @JsonKey(name: 'color_en') required this.colorEn,
-      @JsonKey(name: 'color_ar') required this.colorAr,
-      required this.status});
-
-  factory _$_ExteriorColor.fromJson(Map<String, dynamic> json) =>
-      _$$_ExteriorColorFromJson(json);
-
-  @override
-  final int id;
-  @override
-  final String color;
-  @override
-  @JsonKey(name: 'color_en')
-  final String colorEn;
-  @override
-  @JsonKey(name: 'color_ar')
-  final String colorAr;
-  @override
-  final int status;
-
-  @override
-  String toString() {
-    return 'ExteriorColor(id: $id, color: $color, colorEn: $colorEn, colorAr: $colorAr, status: $status)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ExteriorColor &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.color, color) || other.color == color) &&
-            (identical(other.colorEn, colorEn) || other.colorEn == colorEn) &&
-            (identical(other.colorAr, colorAr) || other.colorAr == colorAr) &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, color, colorEn, colorAr, status);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_ExteriorColorCopyWith<_$_ExteriorColor> get copyWith =>
-      __$$_ExteriorColorCopyWithImpl<_$_ExteriorColor>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ExteriorColorToJson(
-      this,
-    );
-  }
-}
-
-abstract class _ExteriorColor implements ExteriorColor {
-  const factory _ExteriorColor(
-      {required final int id,
-      required final String color,
-      @JsonKey(name: 'color_en') required final String colorEn,
-      @JsonKey(name: 'color_ar') required final String colorAr,
-      required final int status}) = _$_ExteriorColor;
-
-  factory _ExteriorColor.fromJson(Map<String, dynamic> json) =
-      _$_ExteriorColor.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get color;
-  @override
-  @JsonKey(name: 'color_en')
-  String get colorEn;
-  @override
-  @JsonKey(name: 'color_ar')
-  String get colorAr;
-  @override
-  int get status;
-  @override
-  @JsonKey(ignore: true)
-  _$$_ExteriorColorCopyWith<_$_ExteriorColor> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Bidder _$BidderFromJson(Map<String, dynamic> json) {
-  return _Bidder.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Bidder {
-  int get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  String get username => throw _privateConstructorUsedError;
-  @JsonKey(name: 'verified_status')
-  int get verifiedStatus => throw _privateConstructorUsedError;
-  @JsonKey(name: 'user_rating')
-  int get userRating => throw _privateConstructorUsedError;
-  int get type => throw _privateConstructorUsedError;
-  @JsonKey(name: 'phone_number')
-  String get phoneNumber => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $BidderCopyWith<Bidder> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $BidderCopyWith<$Res> {
-  factory $BidderCopyWith(Bidder value, $Res Function(Bidder) then) =
-      _$BidderCopyWithImpl<$Res, Bidder>;
-  @useResult
-  $Res call(
-      {int id,
-      String name,
-      String image,
-      String username,
-      @JsonKey(name: 'verified_status') int verifiedStatus,
-      @JsonKey(name: 'user_rating') int userRating,
-      int type,
-      @JsonKey(name: 'phone_number') String phoneNumber});
-}
-
-/// @nodoc
-class _$BidderCopyWithImpl<$Res, $Val extends Bidder>
-    implements $BidderCopyWith<$Res> {
-  _$BidderCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? image = null,
-    Object? username = null,
-    Object? verifiedStatus = null,
-    Object? userRating = null,
-    Object? type = null,
-    Object? phoneNumber = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      verifiedStatus: null == verifiedStatus
-          ? _value.verifiedStatus
-          : verifiedStatus // ignore: cast_nullable_to_non_nullable
-              as int,
-      userRating: null == userRating
-          ? _value.userRating
-          : userRating // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as int,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_BidderCopyWith<$Res> implements $BidderCopyWith<$Res> {
-  factory _$$_BidderCopyWith(_$_Bidder value, $Res Function(_$_Bidder) then) =
-      __$$_BidderCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String name,
-      String image,
-      String username,
-      @JsonKey(name: 'verified_status') int verifiedStatus,
-      @JsonKey(name: 'user_rating') int userRating,
-      int type,
-      @JsonKey(name: 'phone_number') String phoneNumber});
-}
-
-/// @nodoc
-class __$$_BidderCopyWithImpl<$Res>
-    extends _$BidderCopyWithImpl<$Res, _$_Bidder>
-    implements _$$_BidderCopyWith<$Res> {
-  __$$_BidderCopyWithImpl(_$_Bidder _value, $Res Function(_$_Bidder) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? image = null,
-    Object? username = null,
-    Object? verifiedStatus = null,
-    Object? userRating = null,
-    Object? type = null,
-    Object? phoneNumber = null,
-  }) {
-    return _then(_$_Bidder(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      verifiedStatus: null == verifiedStatus
-          ? _value.verifiedStatus
-          : verifiedStatus // ignore: cast_nullable_to_non_nullable
-              as int,
-      userRating: null == userRating
-          ? _value.userRating
-          : userRating // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as int,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_Bidder implements _Bidder {
-  const _$_Bidder(
-      {required this.id,
-      required this.name,
-      required this.image,
-      required this.username,
-      @JsonKey(name: 'verified_status') required this.verifiedStatus,
-      @JsonKey(name: 'user_rating') required this.userRating,
-      required this.type,
-      @JsonKey(name: 'phone_number') required this.phoneNumber});
-
-  factory _$_Bidder.fromJson(Map<String, dynamic> json) =>
-      _$$_BidderFromJson(json);
-
-  @override
-  final int id;
-  @override
-  final String name;
-  @override
-  final String image;
-  @override
-  final String username;
-  @override
-  @JsonKey(name: 'verified_status')
-  final int verifiedStatus;
-  @override
-  @JsonKey(name: 'user_rating')
-  final int userRating;
-  @override
-  final int type;
-  @override
-  @JsonKey(name: 'phone_number')
-  final String phoneNumber;
-
-  @override
-  String toString() {
-    return 'Bidder(id: $id, name: $name, image: $image, username: $username, verifiedStatus: $verifiedStatus, userRating: $userRating, type: $type, phoneNumber: $phoneNumber)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Bidder &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
-            (identical(other.verifiedStatus, verifiedStatus) ||
-                other.verifiedStatus == verifiedStatus) &&
-            (identical(other.userRating, userRating) ||
-                other.userRating == userRating) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, image, username,
-      verifiedStatus, userRating, type, phoneNumber);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_BidderCopyWith<_$_Bidder> get copyWith =>
-      __$$_BidderCopyWithImpl<_$_Bidder>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_BidderToJson(
-      this,
-    );
-  }
-}
-
-abstract class _Bidder implements Bidder {
-  const factory _Bidder(
-          {required final int id,
-          required final String name,
-          required final String image,
-          required final String username,
-          @JsonKey(name: 'verified_status') required final int verifiedStatus,
-          @JsonKey(name: 'user_rating') required final int userRating,
-          required final int type,
-          @JsonKey(name: 'phone_number') required final String phoneNumber}) =
-      _$_Bidder;
-
-  factory _Bidder.fromJson(Map<String, dynamic> json) = _$_Bidder.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get name;
-  @override
-  String get image;
-  @override
-  String get username;
-  @override
-  @JsonKey(name: 'verified_status')
-  int get verifiedStatus;
-  @override
-  @JsonKey(name: 'user_rating')
-  int get userRating;
-  @override
-  int get type;
-  @override
-  @JsonKey(name: 'phone_number')
-  String get phoneNumber;
-  @override
-  @JsonKey(ignore: true)
-  _$$_BidderCopyWith<_$_Bidder> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-CurrentBid _$CurrentBidFromJson(Map<String, dynamic> json) {
-  return _CurrentBid.fromJson(json);
-}
-
-/// @nodoc
-mixin _$CurrentBid {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'user_id')
-  int get userId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'seller_id')
-  int get sellerId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'product_id')
-  int get productId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'room_id')
-  int? get roomId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'bid_promos_id')
-  int? get bidPromosId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'bid_value')
-  int get bidValue => throw _privateConstructorUsedError;
-  @JsonKey(name: 'total_value')
-  int get totalValue => throw _privateConstructorUsedError;
-  String get comments => throw _privateConstructorUsedError;
-  String get status => throw _privateConstructorUsedError;
-  @JsonKey(name: 'rating_by_user')
-  int get ratingByUser => throw _privateConstructorUsedError;
-  @JsonKey(name: 'comment_by_user')
-  String get commentByUser => throw _privateConstructorUsedError;
-  @JsonKey(name: 'rating_by_seller')
-  int get ratingbySeller => throw _privateConstructorUsedError;
-  @JsonKey(name: 'comment_by_seller')
-  String get commentBySeller => throw _privateConstructorUsedError;
-  @JsonKey(name: 'acceptance_flag')
-  int get acceptanceFlag => throw _privateConstructorUsedError;
-  @JsonKey(name: 'expire_done')
-  int get expireDone => throw _privateConstructorUsedError;
-  @JsonKey(name: 'bid_status')
-  String get bidStatus => throw _privateConstructorUsedError;
-  @JsonKey(name: 'bidder')
-  Bidder get bidder => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $CurrentBidCopyWith<CurrentBid> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $CurrentBidCopyWith<$Res> {
-  factory $CurrentBidCopyWith(
-          CurrentBid value, $Res Function(CurrentBid) then) =
-      _$CurrentBidCopyWithImpl<$Res, CurrentBid>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'seller_id') int sellerId,
-      @JsonKey(name: 'product_id') int productId,
-      @JsonKey(name: 'room_id') int? roomId,
-      @JsonKey(name: 'bid_promos_id') int? bidPromosId,
-      @JsonKey(name: 'bid_value') int bidValue,
-      @JsonKey(name: 'total_value') int totalValue,
-      String comments,
-      String status,
-      @JsonKey(name: 'rating_by_user') int ratingByUser,
-      @JsonKey(name: 'comment_by_user') String commentByUser,
-      @JsonKey(name: 'rating_by_seller') int ratingbySeller,
-      @JsonKey(name: 'comment_by_seller') String commentBySeller,
-      @JsonKey(name: 'acceptance_flag') int acceptanceFlag,
-      @JsonKey(name: 'expire_done') int expireDone,
-      @JsonKey(name: 'bid_status') String bidStatus,
-      @JsonKey(name: 'bidder') Bidder bidder});
-
-  $BidderCopyWith<$Res> get bidder;
-}
-
-/// @nodoc
-class _$CurrentBidCopyWithImpl<$Res, $Val extends CurrentBid>
-    implements $CurrentBidCopyWith<$Res> {
-  _$CurrentBidCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? userId = null,
-    Object? sellerId = null,
-    Object? productId = null,
-    Object? roomId = freezed,
-    Object? bidPromosId = freezed,
-    Object? bidValue = null,
-    Object? totalValue = null,
-    Object? comments = null,
-    Object? status = null,
-    Object? ratingByUser = null,
-    Object? commentByUser = null,
-    Object? ratingbySeller = null,
-    Object? commentBySeller = null,
-    Object? acceptanceFlag = null,
-    Object? expireDone = null,
-    Object? bidStatus = null,
-    Object? bidder = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int,
-      sellerId: null == sellerId
-          ? _value.sellerId
-          : sellerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int,
-      roomId: freezed == roomId
-          ? _value.roomId
-          : roomId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      bidPromosId: freezed == bidPromosId
-          ? _value.bidPromosId
-          : bidPromosId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      bidValue: null == bidValue
-          ? _value.bidValue
-          : bidValue // ignore: cast_nullable_to_non_nullable
-              as int,
-      totalValue: null == totalValue
-          ? _value.totalValue
-          : totalValue // ignore: cast_nullable_to_non_nullable
-              as int,
-      comments: null == comments
-          ? _value.comments
-          : comments // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      ratingByUser: null == ratingByUser
-          ? _value.ratingByUser
-          : ratingByUser // ignore: cast_nullable_to_non_nullable
-              as int,
-      commentByUser: null == commentByUser
-          ? _value.commentByUser
-          : commentByUser // ignore: cast_nullable_to_non_nullable
-              as String,
-      ratingbySeller: null == ratingbySeller
-          ? _value.ratingbySeller
-          : ratingbySeller // ignore: cast_nullable_to_non_nullable
-              as int,
-      commentBySeller: null == commentBySeller
-          ? _value.commentBySeller
-          : commentBySeller // ignore: cast_nullable_to_non_nullable
-              as String,
-      acceptanceFlag: null == acceptanceFlag
-          ? _value.acceptanceFlag
-          : acceptanceFlag // ignore: cast_nullable_to_non_nullable
-              as int,
-      expireDone: null == expireDone
-          ? _value.expireDone
-          : expireDone // ignore: cast_nullable_to_non_nullable
-              as int,
-      bidStatus: null == bidStatus
-          ? _value.bidStatus
-          : bidStatus // ignore: cast_nullable_to_non_nullable
-              as String,
-      bidder: null == bidder
-          ? _value.bidder
-          : bidder // ignore: cast_nullable_to_non_nullable
-              as Bidder,
-    ) as $Val);
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $BidderCopyWith<$Res> get bidder {
-    return $BidderCopyWith<$Res>(_value.bidder, (value) {
-      return _then(_value.copyWith(bidder: value) as $Val);
-    });
-  }
-}
-
-/// @nodoc
-abstract class _$$_CurrentBidCopyWith<$Res>
-    implements $CurrentBidCopyWith<$Res> {
-  factory _$$_CurrentBidCopyWith(
-          _$_CurrentBid value, $Res Function(_$_CurrentBid) then) =
-      __$$_CurrentBidCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'seller_id') int sellerId,
-      @JsonKey(name: 'product_id') int productId,
-      @JsonKey(name: 'room_id') int? roomId,
-      @JsonKey(name: 'bid_promos_id') int? bidPromosId,
-      @JsonKey(name: 'bid_value') int bidValue,
-      @JsonKey(name: 'total_value') int totalValue,
-      String comments,
-      String status,
-      @JsonKey(name: 'rating_by_user') int ratingByUser,
-      @JsonKey(name: 'comment_by_user') String commentByUser,
-      @JsonKey(name: 'rating_by_seller') int ratingbySeller,
-      @JsonKey(name: 'comment_by_seller') String commentBySeller,
-      @JsonKey(name: 'acceptance_flag') int acceptanceFlag,
-      @JsonKey(name: 'expire_done') int expireDone,
-      @JsonKey(name: 'bid_status') String bidStatus,
-      @JsonKey(name: 'bidder') Bidder bidder});
-
-  @override
-  $BidderCopyWith<$Res> get bidder;
-}
-
-/// @nodoc
-class __$$_CurrentBidCopyWithImpl<$Res>
-    extends _$CurrentBidCopyWithImpl<$Res, _$_CurrentBid>
-    implements _$$_CurrentBidCopyWith<$Res> {
-  __$$_CurrentBidCopyWithImpl(
-      _$_CurrentBid _value, $Res Function(_$_CurrentBid) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? userId = null,
-    Object? sellerId = null,
-    Object? productId = null,
-    Object? roomId = freezed,
-    Object? bidPromosId = freezed,
-    Object? bidValue = null,
-    Object? totalValue = null,
-    Object? comments = null,
-    Object? status = null,
-    Object? ratingByUser = null,
-    Object? commentByUser = null,
-    Object? ratingbySeller = null,
-    Object? commentBySeller = null,
-    Object? acceptanceFlag = null,
-    Object? expireDone = null,
-    Object? bidStatus = null,
-    Object? bidder = null,
-  }) {
-    return _then(_$_CurrentBid(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int,
-      sellerId: null == sellerId
-          ? _value.sellerId
-          : sellerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int,
-      roomId: freezed == roomId
-          ? _value.roomId
-          : roomId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      bidPromosId: freezed == bidPromosId
-          ? _value.bidPromosId
-          : bidPromosId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      bidValue: null == bidValue
-          ? _value.bidValue
-          : bidValue // ignore: cast_nullable_to_non_nullable
-              as int,
-      totalValue: null == totalValue
-          ? _value.totalValue
-          : totalValue // ignore: cast_nullable_to_non_nullable
-              as int,
-      comments: null == comments
-          ? _value.comments
-          : comments // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      ratingByUser: null == ratingByUser
-          ? _value.ratingByUser
-          : ratingByUser // ignore: cast_nullable_to_non_nullable
-              as int,
-      commentByUser: null == commentByUser
-          ? _value.commentByUser
-          : commentByUser // ignore: cast_nullable_to_non_nullable
-              as String,
-      ratingbySeller: null == ratingbySeller
-          ? _value.ratingbySeller
-          : ratingbySeller // ignore: cast_nullable_to_non_nullable
-              as int,
-      commentBySeller: null == commentBySeller
-          ? _value.commentBySeller
-          : commentBySeller // ignore: cast_nullable_to_non_nullable
-              as String,
-      acceptanceFlag: null == acceptanceFlag
-          ? _value.acceptanceFlag
-          : acceptanceFlag // ignore: cast_nullable_to_non_nullable
-              as int,
-      expireDone: null == expireDone
-          ? _value.expireDone
-          : expireDone // ignore: cast_nullable_to_non_nullable
-              as int,
-      bidStatus: null == bidStatus
-          ? _value.bidStatus
-          : bidStatus // ignore: cast_nullable_to_non_nullable
-              as String,
-      bidder: null == bidder
-          ? _value.bidder
-          : bidder // ignore: cast_nullable_to_non_nullable
-              as Bidder,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_CurrentBid implements _CurrentBid {
-  const _$_CurrentBid(
-      {required this.id,
-      @JsonKey(name: 'user_id') required this.userId,
-      @JsonKey(name: 'seller_id') required this.sellerId,
-      @JsonKey(name: 'product_id') required this.productId,
-      @JsonKey(name: 'room_id') this.roomId,
-      @JsonKey(name: 'bid_promos_id') this.bidPromosId,
-      @JsonKey(name: 'bid_value') required this.bidValue,
-      @JsonKey(name: 'total_value') required this.totalValue,
-      required this.comments,
-      required this.status,
-      @JsonKey(name: 'rating_by_user') required this.ratingByUser,
-      @JsonKey(name: 'comment_by_user') required this.commentByUser,
-      @JsonKey(name: 'rating_by_seller') required this.ratingbySeller,
-      @JsonKey(name: 'comment_by_seller') required this.commentBySeller,
-      @JsonKey(name: 'acceptance_flag') required this.acceptanceFlag,
-      @JsonKey(name: 'expire_done') required this.expireDone,
-      @JsonKey(name: 'bid_status') required this.bidStatus,
-      @JsonKey(name: 'bidder') required this.bidder});
-
-  factory _$_CurrentBid.fromJson(Map<String, dynamic> json) =>
-      _$$_CurrentBidFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'user_id')
-  final int userId;
-  @override
-  @JsonKey(name: 'seller_id')
-  final int sellerId;
-  @override
-  @JsonKey(name: 'product_id')
-  final int productId;
-  @override
-  @JsonKey(name: 'room_id')
-  final int? roomId;
-  @override
-  @JsonKey(name: 'bid_promos_id')
-  final int? bidPromosId;
-  @override
-  @JsonKey(name: 'bid_value')
-  final int bidValue;
-  @override
-  @JsonKey(name: 'total_value')
-  final int totalValue;
-  @override
-  final String comments;
-  @override
-  final String status;
-  @override
-  @JsonKey(name: 'rating_by_user')
-  final int ratingByUser;
-  @override
-  @JsonKey(name: 'comment_by_user')
-  final String commentByUser;
-  @override
-  @JsonKey(name: 'rating_by_seller')
-  final int ratingbySeller;
-  @override
-  @JsonKey(name: 'comment_by_seller')
-  final String commentBySeller;
-  @override
-  @JsonKey(name: 'acceptance_flag')
-  final int acceptanceFlag;
-  @override
-  @JsonKey(name: 'expire_done')
-  final int expireDone;
-  @override
-  @JsonKey(name: 'bid_status')
-  final String bidStatus;
-  @override
-  @JsonKey(name: 'bidder')
-  final Bidder bidder;
-
-  @override
-  String toString() {
-    return 'CurrentBid(id: $id, userId: $userId, sellerId: $sellerId, productId: $productId, roomId: $roomId, bidPromosId: $bidPromosId, bidValue: $bidValue, totalValue: $totalValue, comments: $comments, status: $status, ratingByUser: $ratingByUser, commentByUser: $commentByUser, ratingbySeller: $ratingbySeller, commentBySeller: $commentBySeller, acceptanceFlag: $acceptanceFlag, expireDone: $expireDone, bidStatus: $bidStatus, bidder: $bidder)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_CurrentBid &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.userId, userId) || other.userId == userId) &&
-            (identical(other.sellerId, sellerId) ||
-                other.sellerId == sellerId) &&
-            (identical(other.productId, productId) ||
-                other.productId == productId) &&
-            (identical(other.roomId, roomId) || other.roomId == roomId) &&
-            (identical(other.bidPromosId, bidPromosId) ||
-                other.bidPromosId == bidPromosId) &&
-            (identical(other.bidValue, bidValue) ||
-                other.bidValue == bidValue) &&
-            (identical(other.totalValue, totalValue) ||
-                other.totalValue == totalValue) &&
-            (identical(other.comments, comments) ||
-                other.comments == comments) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.ratingByUser, ratingByUser) ||
-                other.ratingByUser == ratingByUser) &&
-            (identical(other.commentByUser, commentByUser) ||
-                other.commentByUser == commentByUser) &&
-            (identical(other.ratingbySeller, ratingbySeller) ||
-                other.ratingbySeller == ratingbySeller) &&
-            (identical(other.commentBySeller, commentBySeller) ||
-                other.commentBySeller == commentBySeller) &&
-            (identical(other.acceptanceFlag, acceptanceFlag) ||
-                other.acceptanceFlag == acceptanceFlag) &&
-            (identical(other.expireDone, expireDone) ||
-                other.expireDone == expireDone) &&
-            (identical(other.bidStatus, bidStatus) ||
-                other.bidStatus == bidStatus) &&
-            (identical(other.bidder, bidder) || other.bidder == bidder));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      userId,
-      sellerId,
-      productId,
-      roomId,
-      bidPromosId,
-      bidValue,
-      totalValue,
-      comments,
-      status,
-      ratingByUser,
-      commentByUser,
-      ratingbySeller,
-      commentBySeller,
-      acceptanceFlag,
-      expireDone,
-      bidStatus,
-      bidder);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_CurrentBidCopyWith<_$_CurrentBid> get copyWith =>
-      __$$_CurrentBidCopyWithImpl<_$_CurrentBid>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_CurrentBidToJson(
-      this,
-    );
-  }
-}
-
-abstract class _CurrentBid implements CurrentBid {
-  const factory _CurrentBid(
-      {required final int id,
-      @JsonKey(name: 'user_id') required final int userId,
-      @JsonKey(name: 'seller_id') required final int sellerId,
-      @JsonKey(name: 'product_id') required final int productId,
-      @JsonKey(name: 'room_id') final int? roomId,
-      @JsonKey(name: 'bid_promos_id') final int? bidPromosId,
-      @JsonKey(name: 'bid_value') required final int bidValue,
-      @JsonKey(name: 'total_value') required final int totalValue,
-      required final String comments,
-      required final String status,
-      @JsonKey(name: 'rating_by_user') required final int ratingByUser,
-      @JsonKey(name: 'comment_by_user') required final String commentByUser,
-      @JsonKey(name: 'rating_by_seller') required final int ratingbySeller,
-      @JsonKey(name: 'comment_by_seller') required final String commentBySeller,
-      @JsonKey(name: 'acceptance_flag') required final int acceptanceFlag,
-      @JsonKey(name: 'expire_done') required final int expireDone,
-      @JsonKey(name: 'bid_status') required final String bidStatus,
-      @JsonKey(name: 'bidder') required final Bidder bidder}) = _$_CurrentBid;
-
-  factory _CurrentBid.fromJson(Map<String, dynamic> json) =
-      _$_CurrentBid.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'user_id')
-  int get userId;
-  @override
-  @JsonKey(name: 'seller_id')
-  int get sellerId;
-  @override
-  @JsonKey(name: 'product_id')
-  int get productId;
-  @override
-  @JsonKey(name: 'room_id')
-  int? get roomId;
-  @override
-  @JsonKey(name: 'bid_promos_id')
-  int? get bidPromosId;
-  @override
-  @JsonKey(name: 'bid_value')
-  int get bidValue;
-  @override
-  @JsonKey(name: 'total_value')
-  int get totalValue;
-  @override
-  String get comments;
-  @override
-  String get status;
-  @override
-  @JsonKey(name: 'rating_by_user')
-  int get ratingByUser;
-  @override
-  @JsonKey(name: 'comment_by_user')
-  String get commentByUser;
-  @override
-  @JsonKey(name: 'rating_by_seller')
-  int get ratingbySeller;
-  @override
-  @JsonKey(name: 'comment_by_seller')
-  String get commentBySeller;
-  @override
-  @JsonKey(name: 'acceptance_flag')
-  int get acceptanceFlag;
-  @override
-  @JsonKey(name: 'expire_done')
-  int get expireDone;
-  @override
-  @JsonKey(name: 'bid_status')
-  String get bidStatus;
-  @override
-  @JsonKey(name: 'bidder')
-  Bidder get bidder;
-  @override
-  @JsonKey(ignore: true)
-  _$$_CurrentBidCopyWith<_$_CurrentBid> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Owner _$OwnerFromJson(Map<String, dynamic> json) {
-  return _Owner.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Owner {
-  int get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  String get username => throw _privateConstructorUsedError;
-  @JsonKey(name: 'verified_status')
-  int get verifiedStatus => throw _privateConstructorUsedError;
-  @JsonKey(name: 'user_rating')
-  int get userRating => throw _privateConstructorUsedError;
-  @JsonKey(name: 'phone_number')
-  String get phoneNumber => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $OwnerCopyWith<Owner> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $OwnerCopyWith<$Res> {
-  factory $OwnerCopyWith(Owner value, $Res Function(Owner) then) =
-      _$OwnerCopyWithImpl<$Res, Owner>;
-  @useResult
-  $Res call(
-      {int id,
-      String name,
-      String image,
-      String username,
-      @JsonKey(name: 'verified_status') int verifiedStatus,
-      @JsonKey(name: 'user_rating') int userRating,
-      @JsonKey(name: 'phone_number') String phoneNumber});
-}
-
-/// @nodoc
-class _$OwnerCopyWithImpl<$Res, $Val extends Owner>
-    implements $OwnerCopyWith<$Res> {
-  _$OwnerCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? image = null,
-    Object? username = null,
-    Object? verifiedStatus = null,
-    Object? userRating = null,
-    Object? phoneNumber = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      verifiedStatus: null == verifiedStatus
-          ? _value.verifiedStatus
-          : verifiedStatus // ignore: cast_nullable_to_non_nullable
-              as int,
-      userRating: null == userRating
-          ? _value.userRating
-          : userRating // ignore: cast_nullable_to_non_nullable
-              as int,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_OwnerCopyWith<$Res> implements $OwnerCopyWith<$Res> {
-  factory _$$_OwnerCopyWith(_$_Owner value, $Res Function(_$_Owner) then) =
-      __$$_OwnerCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String name,
-      String image,
-      String username,
-      @JsonKey(name: 'verified_status') int verifiedStatus,
-      @JsonKey(name: 'user_rating') int userRating,
-      @JsonKey(name: 'phone_number') String phoneNumber});
-}
-
-/// @nodoc
-class __$$_OwnerCopyWithImpl<$Res> extends _$OwnerCopyWithImpl<$Res, _$_Owner>
-    implements _$$_OwnerCopyWith<$Res> {
-  __$$_OwnerCopyWithImpl(_$_Owner _value, $Res Function(_$_Owner) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? image = null,
-    Object? username = null,
-    Object? verifiedStatus = null,
-    Object? userRating = null,
-    Object? phoneNumber = null,
-  }) {
-    return _then(_$_Owner(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      verifiedStatus: null == verifiedStatus
-          ? _value.verifiedStatus
-          : verifiedStatus // ignore: cast_nullable_to_non_nullable
-              as int,
-      userRating: null == userRating
-          ? _value.userRating
-          : userRating // ignore: cast_nullable_to_non_nullable
-              as int,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_Owner implements _Owner {
-  const _$_Owner(
-      {required this.id,
-      required this.name,
-      required this.image,
-      required this.username,
-      @JsonKey(name: 'verified_status') required this.verifiedStatus,
-      @JsonKey(name: 'user_rating') required this.userRating,
-      @JsonKey(name: 'phone_number') required this.phoneNumber});
-
-  factory _$_Owner.fromJson(Map<String, dynamic> json) =>
-      _$$_OwnerFromJson(json);
-
-  @override
-  final int id;
-  @override
-  final String name;
-  @override
-  final String image;
-  @override
-  final String username;
-  @override
-  @JsonKey(name: 'verified_status')
-  final int verifiedStatus;
-  @override
-  @JsonKey(name: 'user_rating')
-  final int userRating;
-  @override
-  @JsonKey(name: 'phone_number')
-  final String phoneNumber;
-
-  @override
-  String toString() {
-    return 'Owner(id: $id, name: $name, image: $image, username: $username, verifiedStatus: $verifiedStatus, userRating: $userRating, phoneNumber: $phoneNumber)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Owner &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
-            (identical(other.verifiedStatus, verifiedStatus) ||
-                other.verifiedStatus == verifiedStatus) &&
-            (identical(other.userRating, userRating) ||
-                other.userRating == userRating) &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, image, username,
-      verifiedStatus, userRating, phoneNumber);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_OwnerCopyWith<_$_Owner> get copyWith =>
-      __$$_OwnerCopyWithImpl<_$_Owner>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_OwnerToJson(
-      this,
-    );
-  }
-}
-
-abstract class _Owner implements Owner {
-  const factory _Owner(
-          {required final int id,
-          required final String name,
-          required final String image,
-          required final String username,
-          @JsonKey(name: 'verified_status') required final int verifiedStatus,
-          @JsonKey(name: 'user_rating') required final int userRating,
-          @JsonKey(name: 'phone_number') required final String phoneNumber}) =
-      _$_Owner;
-
-  factory _Owner.fromJson(Map<String, dynamic> json) = _$_Owner.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get name;
-  @override
-  String get image;
-  @override
-  String get username;
-  @override
-  @JsonKey(name: 'verified_status')
-  int get verifiedStatus;
-  @override
-  @JsonKey(name: 'user_rating')
-  int get userRating;
-  @override
-  @JsonKey(name: 'phone_number')
-  String get phoneNumber;
-  @override
-  @JsonKey(ignore: true)
-  _$$_OwnerCopyWith<_$_Owner> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-ProductImage _$ProductImageFromJson(Map<String, dynamic> json) {
-  return _ProductImage.fromJson(json);
-}
-
-/// @nodoc
-mixin _$ProductImage {
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'product_id')
-  int get productId => throw _privateConstructorUsedError;
-  String get image => throw _privateConstructorUsedError;
-  String get thumbnail => throw _privateConstructorUsedError;
-  String get light => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ProductImageCopyWith<ProductImage> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ProductImageCopyWith<$Res> {
-  factory $ProductImageCopyWith(
-          ProductImage value, $Res Function(ProductImage) then) =
-      _$ProductImageCopyWithImpl<$Res, ProductImage>;
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'product_id') int productId,
-      String image,
-      String thumbnail,
-      String light});
-}
-
-/// @nodoc
-class _$ProductImageCopyWithImpl<$Res, $Val extends ProductImage>
-    implements $ProductImageCopyWith<$Res> {
-  _$ProductImageCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? productId = null,
-    Object? image = null,
-    Object? thumbnail = null,
-    Object? light = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      thumbnail: null == thumbnail
-          ? _value.thumbnail
-          : thumbnail // ignore: cast_nullable_to_non_nullable
-              as String,
-      light: null == light
-          ? _value.light
-          : light // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_ProductImageCopyWith<$Res>
-    implements $ProductImageCopyWith<$Res> {
-  factory _$$_ProductImageCopyWith(
-          _$_ProductImage value, $Res Function(_$_ProductImage) then) =
-      __$$_ProductImageCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      @JsonKey(name: 'product_id') int productId,
-      String image,
-      String thumbnail,
-      String light});
-}
-
-/// @nodoc
-class __$$_ProductImageCopyWithImpl<$Res>
-    extends _$ProductImageCopyWithImpl<$Res, _$_ProductImage>
-    implements _$$_ProductImageCopyWith<$Res> {
-  __$$_ProductImageCopyWithImpl(
-      _$_ProductImage _value, $Res Function(_$_ProductImage) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? productId = null,
-    Object? image = null,
-    Object? thumbnail = null,
-    Object? light = null,
-  }) {
-    return _then(_$_ProductImage(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      productId: null == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int,
-      image: null == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String,
-      thumbnail: null == thumbnail
-          ? _value.thumbnail
-          : thumbnail // ignore: cast_nullable_to_non_nullable
-              as String,
-      light: null == light
-          ? _value.light
-          : light // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_ProductImage implements _ProductImage {
-  const _$_ProductImage(
-      {required this.id,
-      @JsonKey(name: 'product_id') required this.productId,
-      required this.image,
-      required this.thumbnail,
-      required this.light});
-
-  factory _$_ProductImage.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductImageFromJson(json);
-
-  @override
-  final int id;
-  @override
-  @JsonKey(name: 'product_id')
-  final int productId;
-  @override
-  final String image;
-  @override
-  final String thumbnail;
-  @override
-  final String light;
-
-  @override
-  String toString() {
-    return 'ProductImage(id: $id, productId: $productId, image: $image, thumbnail: $thumbnail, light: $light)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ProductImage &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.productId, productId) ||
-                other.productId == productId) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.thumbnail, thumbnail) ||
-                other.thumbnail == thumbnail) &&
-            (identical(other.light, light) || other.light == light));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, productId, image, thumbnail, light);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_ProductImageCopyWith<_$_ProductImage> get copyWith =>
-      __$$_ProductImageCopyWithImpl<_$_ProductImage>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ProductImageToJson(
-      this,
-    );
-  }
-}
-
-abstract class _ProductImage implements ProductImage {
-  const factory _ProductImage(
-      {required final int id,
-      @JsonKey(name: 'product_id') required final int productId,
-      required final String image,
-      required final String thumbnail,
-      required final String light}) = _$_ProductImage;
-
-  factory _ProductImage.fromJson(Map<String, dynamic> json) =
-      _$_ProductImage.fromJson;
-
-  @override
-  int get id;
-  @override
-  @JsonKey(name: 'product_id')
-  int get productId;
-  @override
-  String get image;
-  @override
-  String get thumbnail;
-  @override
-  String get light;
-  @override
-  @JsonKey(ignore: true)
-  _$$_ProductImageCopyWith<_$_ProductImage> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Product _$ProductFromJson(Map<String, dynamic> json) {
-  return _Product.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Product {
+mixin _$ProductModel {
   int get id => throw _privateConstructorUsedError;
   @JsonKey(name: 'user_id')
   int get userId => throw _privateConstructorUsedError;
@@ -3119,7 +36,7 @@ mixin _$Product {
   @JsonKey(name: 'gears_text')
   String? get gearsText => throw _privateConstructorUsedError;
   @JsonKey(name: 'sun_roof')
-  SunRoof? get sunRoof => throw _privateConstructorUsedError;
+  SunRoofModel? get sunRoof => throw _privateConstructorUsedError;
   @JsonKey(name: 'car_status')
   String get carStatusText => throw _privateConstructorUsedError;
   @JsonKey(name: 'min_bid')
@@ -3134,7 +51,7 @@ mixin _$Product {
   @JsonKey(name: 'other_info')
   String? get otherInfo => throw _privateConstructorUsedError;
   @JsonKey(name: 'car_type')
-  CarType? get carType => throw _privateConstructorUsedError;
+  CarTypeModel? get carType => throw _privateConstructorUsedError;
   @JsonKey(name: 'deal_title')
   String get dealTitle => throw _privateConstructorUsedError;
   int get status => throw _privateConstructorUsedError;
@@ -3159,18 +76,19 @@ mixin _$Product {
   int get expireDone => throw _privateConstructorUsedError;
   String? get duration => throw _privateConstructorUsedError;
   @JsonKey(name: 'current_bid_id')
-  int get currentBidId => throw _privateConstructorUsedError;
+  int? get currentBidId => throw _privateConstructorUsedError;
   @JsonKey(name: 'product_images')
-  List<ProductImage> get productImages => throw _privateConstructorUsedError;
-  City get city => throw _privateConstructorUsedError;
-  Model? get model => throw _privateConstructorUsedError;
-  Maker? get maker => throw _privateConstructorUsedError;
+  List<ProductImageModel> get productImages =>
+      throw _privateConstructorUsedError;
+  CityModel get city => throw _privateConstructorUsedError;
+  ModelDomain? get model => throw _privateConstructorUsedError;
+  MakerModel? get maker => throw _privateConstructorUsedError;
   @JsonKey(name: 'fuel_type')
-  FuelType? get fuelType => throw _privateConstructorUsedError;
+  FuelTypeModel? get fuelType => throw _privateConstructorUsedError;
   @JsonKey(name: 'interior_color')
-  InteriorColor? get interiorColor => throw _privateConstructorUsedError;
+  InteriorColorModel? get interiorColor => throw _privateConstructorUsedError;
   @JsonKey(name: 'exterior_color')
-  ExteriorColor? get exteriorColor => throw _privateConstructorUsedError;
+  ExteriorColorModel? get exteriorColor => throw _privateConstructorUsedError;
   @JsonKey(name: 'furniture_type')
   String? get furnitureType => throw _privateConstructorUsedError;
   @JsonKey(name: 'sub_type')
@@ -3178,18 +96,19 @@ mixin _$Product {
   @JsonKey(name: 'favourited_by')
   List<String> get favouritedBy => throw _privateConstructorUsedError;
   @JsonKey(name: 'current_bid')
-  CurrentBid? get currentBid => throw _privateConstructorUsedError;
-  Owner get owner => throw _privateConstructorUsedError;
+  CurrentBidModel? get currentBid => throw _privateConstructorUsedError;
+  OwnerModel get owner => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ProductCopyWith<Product> get copyWith => throw _privateConstructorUsedError;
+  $ProductModelCopyWith<ProductModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ProductCopyWith<$Res> {
-  factory $ProductCopyWith(Product value, $Res Function(Product) then) =
-      _$ProductCopyWithImpl<$Res, Product>;
+abstract class $ProductModelCopyWith<$Res> {
+  factory $ProductModelCopyWith(
+          ProductModel value, $Res Function(ProductModel) then) =
+      _$ProductModelCopyWithImpl<$Res, ProductModel>;
   @useResult
   $Res call(
       {int id,
@@ -3206,7 +125,7 @@ abstract class $ProductCopyWith<$Res> {
       String? cylinders,
       String? gears,
       @JsonKey(name: 'gears_text') String? gearsText,
-      @JsonKey(name: 'sun_roof') SunRoof? sunRoof,
+      @JsonKey(name: 'sun_roof') SunRoofModel? sunRoof,
       @JsonKey(name: 'car_status') String carStatusText,
       @JsonKey(name: 'min_bid') int minBid,
       @JsonKey(name: 'serial_num') String? serialNum,
@@ -3214,7 +133,7 @@ abstract class $ProductCopyWith<$Res> {
       @JsonKey(name: 'end_date') String? endDate,
       String description,
       @JsonKey(name: 'other_info') String? otherInfo,
-      @JsonKey(name: 'car_type') CarType? carType,
+      @JsonKey(name: 'car_type') CarTypeModel? carType,
       @JsonKey(name: 'deal_title') String dealTitle,
       int status,
       @JsonKey(name: 'bid_acceptance_flag') int bidAcceptanceFlag,
@@ -3228,36 +147,36 @@ abstract class $ProductCopyWith<$Res> {
       int published,
       @JsonKey(name: 'expire_done') int expireDone,
       String? duration,
-      @JsonKey(name: 'current_bid_id') int currentBidId,
-      @JsonKey(name: 'product_images') List<ProductImage> productImages,
-      City city,
-      Model? model,
-      Maker? maker,
-      @JsonKey(name: 'fuel_type') FuelType? fuelType,
-      @JsonKey(name: 'interior_color') InteriorColor? interiorColor,
-      @JsonKey(name: 'exterior_color') ExteriorColor? exteriorColor,
+      @JsonKey(name: 'current_bid_id') int? currentBidId,
+      @JsonKey(name: 'product_images') List<ProductImageModel> productImages,
+      CityModel city,
+      ModelDomain? model,
+      MakerModel? maker,
+      @JsonKey(name: 'fuel_type') FuelTypeModel? fuelType,
+      @JsonKey(name: 'interior_color') InteriorColorModel? interiorColor,
+      @JsonKey(name: 'exterior_color') ExteriorColorModel? exteriorColor,
       @JsonKey(name: 'furniture_type') String? furnitureType,
       @JsonKey(name: 'sub_type') String? subType,
       @JsonKey(name: 'favourited_by') List<String> favouritedBy,
-      @JsonKey(name: 'current_bid') CurrentBid? currentBid,
-      Owner owner});
+      @JsonKey(name: 'current_bid') CurrentBidModel? currentBid,
+      OwnerModel owner});
 
-  $SunRoofCopyWith<$Res>? get sunRoof;
-  $CarTypeCopyWith<$Res>? get carType;
-  $CityCopyWith<$Res> get city;
-  $ModelCopyWith<$Res>? get model;
-  $MakerCopyWith<$Res>? get maker;
-  $FuelTypeCopyWith<$Res>? get fuelType;
-  $InteriorColorCopyWith<$Res>? get interiorColor;
-  $ExteriorColorCopyWith<$Res>? get exteriorColor;
-  $CurrentBidCopyWith<$Res>? get currentBid;
-  $OwnerCopyWith<$Res> get owner;
+  $SunRoofModelCopyWith<$Res>? get sunRoof;
+  $CarTypeModelCopyWith<$Res>? get carType;
+  $CityModelCopyWith<$Res> get city;
+  $ModelDomainCopyWith<$Res>? get model;
+  $MakerModelCopyWith<$Res>? get maker;
+  $FuelTypeModelCopyWith<$Res>? get fuelType;
+  $InteriorColorModelCopyWith<$Res>? get interiorColor;
+  $ExteriorColorModelCopyWith<$Res>? get exteriorColor;
+  $CurrentBidModelCopyWith<$Res>? get currentBid;
+  $OwnerModelCopyWith<$Res> get owner;
 }
 
 /// @nodoc
-class _$ProductCopyWithImpl<$Res, $Val extends Product>
-    implements $ProductCopyWith<$Res> {
-  _$ProductCopyWithImpl(this._value, this._then);
+class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
+    implements $ProductModelCopyWith<$Res> {
+  _$ProductModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -3303,7 +222,7 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
     Object? published = null,
     Object? expireDone = null,
     Object? duration = freezed,
-    Object? currentBidId = null,
+    Object? currentBidId = freezed,
     Object? productImages = null,
     Object? city = null,
     Object? model = freezed,
@@ -3377,7 +296,7 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
       sunRoof: freezed == sunRoof
           ? _value.sunRoof
           : sunRoof // ignore: cast_nullable_to_non_nullable
-              as SunRoof?,
+              as SunRoofModel?,
       carStatusText: null == carStatusText
           ? _value.carStatusText
           : carStatusText // ignore: cast_nullable_to_non_nullable
@@ -3409,7 +328,7 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
       carType: freezed == carType
           ? _value.carType
           : carType // ignore: cast_nullable_to_non_nullable
-              as CarType?,
+              as CarTypeModel?,
       dealTitle: null == dealTitle
           ? _value.dealTitle
           : dealTitle // ignore: cast_nullable_to_non_nullable
@@ -3462,38 +381,38 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as String?,
-      currentBidId: null == currentBidId
+      currentBidId: freezed == currentBidId
           ? _value.currentBidId
           : currentBidId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       productImages: null == productImages
           ? _value.productImages
           : productImages // ignore: cast_nullable_to_non_nullable
-              as List<ProductImage>,
+              as List<ProductImageModel>,
       city: null == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
-              as City,
+              as CityModel,
       model: freezed == model
           ? _value.model
           : model // ignore: cast_nullable_to_non_nullable
-              as Model?,
+              as ModelDomain?,
       maker: freezed == maker
           ? _value.maker
           : maker // ignore: cast_nullable_to_non_nullable
-              as Maker?,
+              as MakerModel?,
       fuelType: freezed == fuelType
           ? _value.fuelType
           : fuelType // ignore: cast_nullable_to_non_nullable
-              as FuelType?,
+              as FuelTypeModel?,
       interiorColor: freezed == interiorColor
           ? _value.interiorColor
           : interiorColor // ignore: cast_nullable_to_non_nullable
-              as InteriorColor?,
+              as InteriorColorModel?,
       exteriorColor: freezed == exteriorColor
           ? _value.exteriorColor
           : exteriorColor // ignore: cast_nullable_to_non_nullable
-              as ExteriorColor?,
+              as ExteriorColorModel?,
       furnitureType: freezed == furnitureType
           ? _value.furnitureType
           : furnitureType // ignore: cast_nullable_to_non_nullable
@@ -3509,132 +428,133 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
       currentBid: freezed == currentBid
           ? _value.currentBid
           : currentBid // ignore: cast_nullable_to_non_nullable
-              as CurrentBid?,
+              as CurrentBidModel?,
       owner: null == owner
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
-              as Owner,
+              as OwnerModel,
     ) as $Val);
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $SunRoofCopyWith<$Res>? get sunRoof {
+  $SunRoofModelCopyWith<$Res>? get sunRoof {
     if (_value.sunRoof == null) {
       return null;
     }
 
-    return $SunRoofCopyWith<$Res>(_value.sunRoof!, (value) {
+    return $SunRoofModelCopyWith<$Res>(_value.sunRoof!, (value) {
       return _then(_value.copyWith(sunRoof: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $CarTypeCopyWith<$Res>? get carType {
+  $CarTypeModelCopyWith<$Res>? get carType {
     if (_value.carType == null) {
       return null;
     }
 
-    return $CarTypeCopyWith<$Res>(_value.carType!, (value) {
+    return $CarTypeModelCopyWith<$Res>(_value.carType!, (value) {
       return _then(_value.copyWith(carType: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $CityCopyWith<$Res> get city {
-    return $CityCopyWith<$Res>(_value.city, (value) {
+  $CityModelCopyWith<$Res> get city {
+    return $CityModelCopyWith<$Res>(_value.city, (value) {
       return _then(_value.copyWith(city: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $ModelCopyWith<$Res>? get model {
+  $ModelDomainCopyWith<$Res>? get model {
     if (_value.model == null) {
       return null;
     }
 
-    return $ModelCopyWith<$Res>(_value.model!, (value) {
+    return $ModelDomainCopyWith<$Res>(_value.model!, (value) {
       return _then(_value.copyWith(model: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $MakerCopyWith<$Res>? get maker {
+  $MakerModelCopyWith<$Res>? get maker {
     if (_value.maker == null) {
       return null;
     }
 
-    return $MakerCopyWith<$Res>(_value.maker!, (value) {
+    return $MakerModelCopyWith<$Res>(_value.maker!, (value) {
       return _then(_value.copyWith(maker: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $FuelTypeCopyWith<$Res>? get fuelType {
+  $FuelTypeModelCopyWith<$Res>? get fuelType {
     if (_value.fuelType == null) {
       return null;
     }
 
-    return $FuelTypeCopyWith<$Res>(_value.fuelType!, (value) {
+    return $FuelTypeModelCopyWith<$Res>(_value.fuelType!, (value) {
       return _then(_value.copyWith(fuelType: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $InteriorColorCopyWith<$Res>? get interiorColor {
+  $InteriorColorModelCopyWith<$Res>? get interiorColor {
     if (_value.interiorColor == null) {
       return null;
     }
 
-    return $InteriorColorCopyWith<$Res>(_value.interiorColor!, (value) {
+    return $InteriorColorModelCopyWith<$Res>(_value.interiorColor!, (value) {
       return _then(_value.copyWith(interiorColor: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $ExteriorColorCopyWith<$Res>? get exteriorColor {
+  $ExteriorColorModelCopyWith<$Res>? get exteriorColor {
     if (_value.exteriorColor == null) {
       return null;
     }
 
-    return $ExteriorColorCopyWith<$Res>(_value.exteriorColor!, (value) {
+    return $ExteriorColorModelCopyWith<$Res>(_value.exteriorColor!, (value) {
       return _then(_value.copyWith(exteriorColor: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $CurrentBidCopyWith<$Res>? get currentBid {
+  $CurrentBidModelCopyWith<$Res>? get currentBid {
     if (_value.currentBid == null) {
       return null;
     }
 
-    return $CurrentBidCopyWith<$Res>(_value.currentBid!, (value) {
+    return $CurrentBidModelCopyWith<$Res>(_value.currentBid!, (value) {
       return _then(_value.copyWith(currentBid: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $OwnerCopyWith<$Res> get owner {
-    return $OwnerCopyWith<$Res>(_value.owner, (value) {
+  $OwnerModelCopyWith<$Res> get owner {
+    return $OwnerModelCopyWith<$Res>(_value.owner, (value) {
       return _then(_value.copyWith(owner: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
-  factory _$$_ProductCopyWith(
-          _$_Product value, $Res Function(_$_Product) then) =
-      __$$_ProductCopyWithImpl<$Res>;
+abstract class _$$_ProductModelCopyWith<$Res>
+    implements $ProductModelCopyWith<$Res> {
+  factory _$$_ProductModelCopyWith(
+          _$_ProductModel value, $Res Function(_$_ProductModel) then) =
+      __$$_ProductModelCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -3652,7 +572,7 @@ abstract class _$$_ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       String? cylinders,
       String? gears,
       @JsonKey(name: 'gears_text') String? gearsText,
-      @JsonKey(name: 'sun_roof') SunRoof? sunRoof,
+      @JsonKey(name: 'sun_roof') SunRoofModel? sunRoof,
       @JsonKey(name: 'car_status') String carStatusText,
       @JsonKey(name: 'min_bid') int minBid,
       @JsonKey(name: 'serial_num') String? serialNum,
@@ -3660,7 +580,7 @@ abstract class _$$_ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       @JsonKey(name: 'end_date') String? endDate,
       String description,
       @JsonKey(name: 'other_info') String? otherInfo,
-      @JsonKey(name: 'car_type') CarType? carType,
+      @JsonKey(name: 'car_type') CarTypeModel? carType,
       @JsonKey(name: 'deal_title') String dealTitle,
       int status,
       @JsonKey(name: 'bid_acceptance_flag') int bidAcceptanceFlag,
@@ -3674,47 +594,48 @@ abstract class _$$_ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       int published,
       @JsonKey(name: 'expire_done') int expireDone,
       String? duration,
-      @JsonKey(name: 'current_bid_id') int currentBidId,
-      @JsonKey(name: 'product_images') List<ProductImage> productImages,
-      City city,
-      Model? model,
-      Maker? maker,
-      @JsonKey(name: 'fuel_type') FuelType? fuelType,
-      @JsonKey(name: 'interior_color') InteriorColor? interiorColor,
-      @JsonKey(name: 'exterior_color') ExteriorColor? exteriorColor,
+      @JsonKey(name: 'current_bid_id') int? currentBidId,
+      @JsonKey(name: 'product_images') List<ProductImageModel> productImages,
+      CityModel city,
+      ModelDomain? model,
+      MakerModel? maker,
+      @JsonKey(name: 'fuel_type') FuelTypeModel? fuelType,
+      @JsonKey(name: 'interior_color') InteriorColorModel? interiorColor,
+      @JsonKey(name: 'exterior_color') ExteriorColorModel? exteriorColor,
       @JsonKey(name: 'furniture_type') String? furnitureType,
       @JsonKey(name: 'sub_type') String? subType,
       @JsonKey(name: 'favourited_by') List<String> favouritedBy,
-      @JsonKey(name: 'current_bid') CurrentBid? currentBid,
-      Owner owner});
+      @JsonKey(name: 'current_bid') CurrentBidModel? currentBid,
+      OwnerModel owner});
 
   @override
-  $SunRoofCopyWith<$Res>? get sunRoof;
+  $SunRoofModelCopyWith<$Res>? get sunRoof;
   @override
-  $CarTypeCopyWith<$Res>? get carType;
+  $CarTypeModelCopyWith<$Res>? get carType;
   @override
-  $CityCopyWith<$Res> get city;
+  $CityModelCopyWith<$Res> get city;
   @override
-  $ModelCopyWith<$Res>? get model;
+  $ModelDomainCopyWith<$Res>? get model;
   @override
-  $MakerCopyWith<$Res>? get maker;
+  $MakerModelCopyWith<$Res>? get maker;
   @override
-  $FuelTypeCopyWith<$Res>? get fuelType;
+  $FuelTypeModelCopyWith<$Res>? get fuelType;
   @override
-  $InteriorColorCopyWith<$Res>? get interiorColor;
+  $InteriorColorModelCopyWith<$Res>? get interiorColor;
   @override
-  $ExteriorColorCopyWith<$Res>? get exteriorColor;
+  $ExteriorColorModelCopyWith<$Res>? get exteriorColor;
   @override
-  $CurrentBidCopyWith<$Res>? get currentBid;
+  $CurrentBidModelCopyWith<$Res>? get currentBid;
   @override
-  $OwnerCopyWith<$Res> get owner;
+  $OwnerModelCopyWith<$Res> get owner;
 }
 
 /// @nodoc
-class __$$_ProductCopyWithImpl<$Res>
-    extends _$ProductCopyWithImpl<$Res, _$_Product>
-    implements _$$_ProductCopyWith<$Res> {
-  __$$_ProductCopyWithImpl(_$_Product _value, $Res Function(_$_Product) _then)
+class __$$_ProductModelCopyWithImpl<$Res>
+    extends _$ProductModelCopyWithImpl<$Res, _$_ProductModel>
+    implements _$$_ProductModelCopyWith<$Res> {
+  __$$_ProductModelCopyWithImpl(
+      _$_ProductModel _value, $Res Function(_$_ProductModel) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3756,7 +677,7 @@ class __$$_ProductCopyWithImpl<$Res>
     Object? published = null,
     Object? expireDone = null,
     Object? duration = freezed,
-    Object? currentBidId = null,
+    Object? currentBidId = freezed,
     Object? productImages = null,
     Object? city = null,
     Object? model = freezed,
@@ -3770,7 +691,7 @@ class __$$_ProductCopyWithImpl<$Res>
     Object? currentBid = freezed,
     Object? owner = null,
   }) {
-    return _then(_$_Product(
+    return _then(_$_ProductModel(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -3830,7 +751,7 @@ class __$$_ProductCopyWithImpl<$Res>
       sunRoof: freezed == sunRoof
           ? _value.sunRoof
           : sunRoof // ignore: cast_nullable_to_non_nullable
-              as SunRoof?,
+              as SunRoofModel?,
       carStatusText: null == carStatusText
           ? _value.carStatusText
           : carStatusText // ignore: cast_nullable_to_non_nullable
@@ -3862,7 +783,7 @@ class __$$_ProductCopyWithImpl<$Res>
       carType: freezed == carType
           ? _value.carType
           : carType // ignore: cast_nullable_to_non_nullable
-              as CarType?,
+              as CarTypeModel?,
       dealTitle: null == dealTitle
           ? _value.dealTitle
           : dealTitle // ignore: cast_nullable_to_non_nullable
@@ -3915,38 +836,38 @@ class __$$_ProductCopyWithImpl<$Res>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as String?,
-      currentBidId: null == currentBidId
+      currentBidId: freezed == currentBidId
           ? _value.currentBidId
           : currentBidId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       productImages: null == productImages
           ? _value._productImages
           : productImages // ignore: cast_nullable_to_non_nullable
-              as List<ProductImage>,
+              as List<ProductImageModel>,
       city: null == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
-              as City,
+              as CityModel,
       model: freezed == model
           ? _value.model
           : model // ignore: cast_nullable_to_non_nullable
-              as Model?,
+              as ModelDomain?,
       maker: freezed == maker
           ? _value.maker
           : maker // ignore: cast_nullable_to_non_nullable
-              as Maker?,
+              as MakerModel?,
       fuelType: freezed == fuelType
           ? _value.fuelType
           : fuelType // ignore: cast_nullable_to_non_nullable
-              as FuelType?,
+              as FuelTypeModel?,
       interiorColor: freezed == interiorColor
           ? _value.interiorColor
           : interiorColor // ignore: cast_nullable_to_non_nullable
-              as InteriorColor?,
+              as InteriorColorModel?,
       exteriorColor: freezed == exteriorColor
           ? _value.exteriorColor
           : exteriorColor // ignore: cast_nullable_to_non_nullable
-              as ExteriorColor?,
+              as ExteriorColorModel?,
       furnitureType: freezed == furnitureType
           ? _value.furnitureType
           : furnitureType // ignore: cast_nullable_to_non_nullable
@@ -3962,19 +883,19 @@ class __$$_ProductCopyWithImpl<$Res>
       currentBid: freezed == currentBid
           ? _value.currentBid
           : currentBid // ignore: cast_nullable_to_non_nullable
-              as CurrentBid?,
+              as CurrentBidModel?,
       owner: null == owner
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
-              as Owner,
+              as OwnerModel,
     ));
   }
 }
 
 /// @nodoc
-@JsonSerializable()
-class _$_Product implements _Product {
-  const _$_Product(
+
+class _$_ProductModel implements _ProductModel {
+  const _$_ProductModel(
       {required this.id,
       @JsonKey(name: 'user_id') required this.userId,
       @JsonKey(name: 'room_id') this.roomId,
@@ -4011,9 +932,9 @@ class _$_Product implements _Product {
       required this.published,
       @JsonKey(name: 'expire_done') required this.expireDone,
       this.duration,
-      @JsonKey(name: 'current_bid_id') required this.currentBidId,
+      @JsonKey(name: 'current_bid_id') this.currentBidId,
       @JsonKey(name: 'product_images')
-      required final List<ProductImage> productImages,
+      required final List<ProductImageModel> productImages,
       required this.city,
       this.model,
       this.maker,
@@ -4027,9 +948,6 @@ class _$_Product implements _Product {
       required this.owner})
       : _productImages = productImages,
         _favouritedBy = favouritedBy;
-
-  factory _$_Product.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductFromJson(json);
 
   @override
   final int id;
@@ -4066,7 +984,7 @@ class _$_Product implements _Product {
   final String? gearsText;
   @override
   @JsonKey(name: 'sun_roof')
-  final SunRoof? sunRoof;
+  final SunRoofModel? sunRoof;
   @override
   @JsonKey(name: 'car_status')
   final String carStatusText;
@@ -4089,7 +1007,7 @@ class _$_Product implements _Product {
   final String? otherInfo;
   @override
   @JsonKey(name: 'car_type')
-  final CarType? carType;
+  final CarTypeModel? carType;
   @override
   @JsonKey(name: 'deal_title')
   final String dealTitle;
@@ -4128,31 +1046,31 @@ class _$_Product implements _Product {
   final String? duration;
   @override
   @JsonKey(name: 'current_bid_id')
-  final int currentBidId;
-  final List<ProductImage> _productImages;
+  final int? currentBidId;
+  final List<ProductImageModel> _productImages;
   @override
   @JsonKey(name: 'product_images')
-  List<ProductImage> get productImages {
+  List<ProductImageModel> get productImages {
     if (_productImages is EqualUnmodifiableListView) return _productImages;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_productImages);
   }
 
   @override
-  final City city;
+  final CityModel city;
   @override
-  final Model? model;
+  final ModelDomain? model;
   @override
-  final Maker? maker;
+  final MakerModel? maker;
   @override
   @JsonKey(name: 'fuel_type')
-  final FuelType? fuelType;
+  final FuelTypeModel? fuelType;
   @override
   @JsonKey(name: 'interior_color')
-  final InteriorColor? interiorColor;
+  final InteriorColorModel? interiorColor;
   @override
   @JsonKey(name: 'exterior_color')
-  final ExteriorColor? exteriorColor;
+  final ExteriorColorModel? exteriorColor;
   @override
   @JsonKey(name: 'furniture_type')
   final String? furnitureType;
@@ -4170,20 +1088,20 @@ class _$_Product implements _Product {
 
   @override
   @JsonKey(name: 'current_bid')
-  final CurrentBid? currentBid;
+  final CurrentBidModel? currentBid;
   @override
-  final Owner owner;
+  final OwnerModel owner;
 
   @override
   String toString() {
-    return 'Product(id: $id, userId: $userId, roomId: $roomId, image: $image, price: $price, originalPrice: $originalPrice, reqPoints: $reqPoints, year: $year, milage: $milage, inspected: $inspected, warranty: $warranty, cylinders: $cylinders, gears: $gears, gearsText: $gearsText, sunRoof: $sunRoof, carStatusText: $carStatusText, minBid: $minBid, serialNum: $serialNum, startDate: $startDate, endDate: $endDate, description: $description, otherInfo: $otherInfo, carType: $carType, dealTitle: $dealTitle, status: $status, bidAcceptanceFlag: $bidAcceptanceFlag, acceptedBidValue: $acceptedBidValue, expiredAt: $expiredAt, furnetureTypeId: $furnetureTypeId, productTypeId: $productTypeId, pointsBuyer: $pointsBuyer, productCategoryId: $productCategoryId, whatsappAvailable: $whatsappAvailable, published: $published, expireDone: $expireDone, duration: $duration, currentBidId: $currentBidId, productImages: $productImages, city: $city, model: $model, maker: $maker, fuelType: $fuelType, interiorColor: $interiorColor, exteriorColor: $exteriorColor, furnitureType: $furnitureType, subType: $subType, favouritedBy: $favouritedBy, currentBid: $currentBid, owner: $owner)';
+    return 'ProductModel(id: $id, userId: $userId, roomId: $roomId, image: $image, price: $price, originalPrice: $originalPrice, reqPoints: $reqPoints, year: $year, milage: $milage, inspected: $inspected, warranty: $warranty, cylinders: $cylinders, gears: $gears, gearsText: $gearsText, sunRoof: $sunRoof, carStatusText: $carStatusText, minBid: $minBid, serialNum: $serialNum, startDate: $startDate, endDate: $endDate, description: $description, otherInfo: $otherInfo, carType: $carType, dealTitle: $dealTitle, status: $status, bidAcceptanceFlag: $bidAcceptanceFlag, acceptedBidValue: $acceptedBidValue, expiredAt: $expiredAt, furnetureTypeId: $furnetureTypeId, productTypeId: $productTypeId, pointsBuyer: $pointsBuyer, productCategoryId: $productCategoryId, whatsappAvailable: $whatsappAvailable, published: $published, expireDone: $expireDone, duration: $duration, currentBidId: $currentBidId, productImages: $productImages, city: $city, model: $model, maker: $maker, fuelType: $fuelType, interiorColor: $interiorColor, exteriorColor: $exteriorColor, furnitureType: $furnitureType, subType: $subType, favouritedBy: $favouritedBy, currentBid: $currentBid, owner: $owner)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Product &&
+            other is _$_ProductModel &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.roomId, roomId) || other.roomId == roomId) &&
@@ -4266,7 +1184,6 @@ class _$_Product implements _Product {
             (identical(other.owner, owner) || other.owner == owner));
   }
 
-  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -4324,19 +1241,12 @@ class _$_Product implements _Product {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductCopyWith<_$_Product> get copyWith =>
-      __$$_ProductCopyWithImpl<_$_Product>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ProductToJson(
-      this,
-    );
-  }
+  _$$_ProductModelCopyWith<_$_ProductModel> get copyWith =>
+      __$$_ProductModelCopyWithImpl<_$_ProductModel>(this, _$identity);
 }
 
-abstract class _Product implements Product {
-  const factory _Product(
+abstract class _ProductModel implements ProductModel {
+  const factory _ProductModel(
       {required final int id,
       @JsonKey(name: 'user_id') required final int userId,
       @JsonKey(name: 'room_id') final int? roomId,
@@ -4351,7 +1261,7 @@ abstract class _Product implements Product {
       final String? cylinders,
       final String? gears,
       @JsonKey(name: 'gears_text') final String? gearsText,
-      @JsonKey(name: 'sun_roof') final SunRoof? sunRoof,
+      @JsonKey(name: 'sun_roof') final SunRoofModel? sunRoof,
       @JsonKey(name: 'car_status') required final String carStatusText,
       @JsonKey(name: 'min_bid') required final int minBid,
       @JsonKey(name: 'serial_num') final String? serialNum,
@@ -4359,7 +1269,7 @@ abstract class _Product implements Product {
       @JsonKey(name: 'end_date') final String? endDate,
       required final String description,
       @JsonKey(name: 'other_info') final String? otherInfo,
-      @JsonKey(name: 'car_type') final CarType? carType,
+      @JsonKey(name: 'car_type') final CarTypeModel? carType,
       @JsonKey(name: 'deal_title') required final String dealTitle,
       required final int status,
       @JsonKey(name: 'bid_acceptance_flag')
@@ -4374,22 +1284,20 @@ abstract class _Product implements Product {
       required final int published,
       @JsonKey(name: 'expire_done') required final int expireDone,
       final String? duration,
-      @JsonKey(name: 'current_bid_id') required final int currentBidId,
+      @JsonKey(name: 'current_bid_id') final int? currentBidId,
       @JsonKey(name: 'product_images')
-      required final List<ProductImage> productImages,
-      required final City city,
-      final Model? model,
-      final Maker? maker,
-      @JsonKey(name: 'fuel_type') final FuelType? fuelType,
-      @JsonKey(name: 'interior_color') final InteriorColor? interiorColor,
-      @JsonKey(name: 'exterior_color') final ExteriorColor? exteriorColor,
+      required final List<ProductImageModel> productImages,
+      required final CityModel city,
+      final ModelDomain? model,
+      final MakerModel? maker,
+      @JsonKey(name: 'fuel_type') final FuelTypeModel? fuelType,
+      @JsonKey(name: 'interior_color') final InteriorColorModel? interiorColor,
+      @JsonKey(name: 'exterior_color') final ExteriorColorModel? exteriorColor,
       @JsonKey(name: 'furniture_type') final String? furnitureType,
       @JsonKey(name: 'sub_type') final String? subType,
       @JsonKey(name: 'favourited_by') required final List<String> favouritedBy,
-      @JsonKey(name: 'current_bid') final CurrentBid? currentBid,
-      required final Owner owner}) = _$_Product;
-
-  factory _Product.fromJson(Map<String, dynamic> json) = _$_Product.fromJson;
+      @JsonKey(name: 'current_bid') final CurrentBidModel? currentBid,
+      required final OwnerModel owner}) = _$_ProductModel;
 
   @override
   int get id;
@@ -4426,7 +1334,7 @@ abstract class _Product implements Product {
   String? get gearsText;
   @override
   @JsonKey(name: 'sun_roof')
-  SunRoof? get sunRoof;
+  SunRoofModel? get sunRoof;
   @override
   @JsonKey(name: 'car_status')
   String get carStatusText;
@@ -4449,7 +1357,7 @@ abstract class _Product implements Product {
   String? get otherInfo;
   @override
   @JsonKey(name: 'car_type')
-  CarType? get carType;
+  CarTypeModel? get carType;
   @override
   @JsonKey(name: 'deal_title')
   String get dealTitle;
@@ -4488,25 +1396,25 @@ abstract class _Product implements Product {
   String? get duration;
   @override
   @JsonKey(name: 'current_bid_id')
-  int get currentBidId;
+  int? get currentBidId;
   @override
   @JsonKey(name: 'product_images')
-  List<ProductImage> get productImages;
+  List<ProductImageModel> get productImages;
   @override
-  City get city;
+  CityModel get city;
   @override
-  Model? get model;
+  ModelDomain? get model;
   @override
-  Maker? get maker;
+  MakerModel? get maker;
   @override
   @JsonKey(name: 'fuel_type')
-  FuelType? get fuelType;
+  FuelTypeModel? get fuelType;
   @override
   @JsonKey(name: 'interior_color')
-  InteriorColor? get interiorColor;
+  InteriorColorModel? get interiorColor;
   @override
   @JsonKey(name: 'exterior_color')
-  ExteriorColor? get exteriorColor;
+  ExteriorColorModel? get exteriorColor;
   @override
   @JsonKey(name: 'furniture_type')
   String? get furnitureType;
@@ -4518,11 +1426,11 @@ abstract class _Product implements Product {
   List<String> get favouritedBy;
   @override
   @JsonKey(name: 'current_bid')
-  CurrentBid? get currentBid;
+  CurrentBidModel? get currentBid;
   @override
-  Owner get owner;
+  OwnerModel get owner;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductCopyWith<_$_Product> get copyWith =>
+  _$$_ProductModelCopyWith<_$_ProductModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
